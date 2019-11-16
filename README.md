@@ -37,9 +37,11 @@ Google Maps API is able to convert a city to a location with latitude and longit
 Steps to run the application:
 
 1. git clone https://github.com/weiweimsn/WeatherApp-WW.git
-2. npm install
-3. install Angular-Cli with "npm install -g @angular/cli" if you have not already installed it.
-4. ng serve
+2. cd WeatherApp-WW
+3. npm install
+4. install angular/cli with "npm install -g @angular/cli" if you have not installed it.
+5. npm start
+
 
 Then you will be able to see a textbox with auto-complete capability, please enter a city name, for example, Toronto, you will see the current weather and following 5 days weather forecast, this is the coding challenge requirement, you are free to enter any city in the world.
 
