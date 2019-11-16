@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "../public/assets/style/weather-icons.min.css";
+
+.threeDEffect{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textThreeDEffect{
+    text-shadow: 2px 2px 4px #e0dada;
+    font-weight: bold;
+}

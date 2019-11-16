@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="form-group">
+      <label>City Name: </label>
+      <input type="text" #city (keyup)="clearWeatherInfo()" value="Toronto" placeholder="Toronto">
+  </div>
+  
+    <section class="row col-sm-12 weatherInfo threeDEffect" *ngIf="weatherInfo.currently">
+      <div class="col-sm-12"><i [ngClass] = "findRightWeatherIconOnToday()"></i></div>
+      <div class="col-sm-12">{{city.value}}</div>
+      <div class="col-sm-12">{{weatherInfo.currently.summary}}</div>
+    
+      <div class="degree col-sm-12">{{convertFahrenheitToCelsius(weatherInfo.currently.temperature)}} <i class="wi wi-celsius"></i></div>
+  </section>
+
+  <section class="row weatherForecastSection" *ngIf="weatherInfo.currently">
+    <h3 class="row col-sm-12 textThreeDEffect">The Following 5 Days Forecast: </h3>
+    <app-weather-forecast class="rol" *ngFor="let day of forecasts" [minDegree]="convertFahrenheitToCelsius(day.temperatureLow)" 
+        [maxDegree]="convertFahrenheitToCelsius(day.temperatureHigh)" [iconClass]="findRightWeatherForecastIcon(day.icon)" [forecast]="getChildForecast(day.icon)"></app-weather-forecast>
+  </section>
+
+</div>
