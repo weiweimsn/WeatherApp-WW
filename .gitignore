@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 # CSS
-**/*.css
+src/**/*.css
