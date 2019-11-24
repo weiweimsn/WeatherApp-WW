@@ -43,8 +43,9 @@ export class WeatherComponent implements OnInit {
       .subscribe(data => {
         const celsius = this.convertFahrenheitToCelsius(data.currently.temperature);
         this.weatherInfo = data;
-        console.log(data.daily);
-        this.forecasts = data.daily.data.slice(1, 6);
+        this.forecasts = [...data.daily.data.slice(1, 6)];
+        // this.forecasts = data.daily.data.slice(1, 6);
+        console.log(this.forecasts);
         this.changeDetection.detectChanges();
     });
   }

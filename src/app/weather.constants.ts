@@ -4,7 +4,7 @@ const WeatherConstant = {
     clear: "wi wi-day-sunny",
     cloudy: "wi wi-day-cloudy",
     gust: "wi wi-day-cloudy-gusts",
-    windy: "wi wi-day-cloudy-windy",
+    wind: "wi wi-day-cloudy-windy",
     fog: "wi wi-day-fog",
     hail: "wi wi-day-hail",
     haze: "wi wi-day-haze",
@@ -15,6 +15,7 @@ const WeatherConstant = {
     sleet: "wi wi-day-sleet",
     storm: "wi wi-day-sleet-storm",
     snow: "wi wi-day-snow",
+    // windy: "wi wi-day-windy",
     thunderstorm: "wi wi-day-thunderstorm",
     drizzle: "wi wi-day-sprinkle"
 }
